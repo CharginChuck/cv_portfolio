@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px auto 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 5rem;
+    color: #11999E;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #11999E;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+}
+
+.bottom-container {
+
+}
+
+.cloud1 {
+    position: relative;
+    left: 200px;
+    top: 15px;
+}
+
+.cloud2 {
+    position: absolute;
+    bottom: 270px;
+}
+
+.hello {
+    position: relative
+    top: 50px;
+}
+
+.middle-container {
+
+}
+
+.mountain {
+    position: relative;
+    margin: 0;
+    top: 0;
+}
+
+.profile-pic {
+    margin-top: 20px;
+    width: 125px;
+}
+
+.python-logo {
+    margin-right: 30px;
+    width: 20%;
+    float: left;
+}
+
+.skill-row {
+    margin: 100px auto 100px auto;
+    width: 50%;
+    text-align: left;
+}
+
+.top-container {
+    background-color: #C6EBC5;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.webdev-logo {
+    width: 30%;
+    float: right;
+    margin-left: 30px;
+}
