@@ -21,9 +21,7 @@ h3 {
     color: #11999E;
 }
 
-.bottom-container {
-
-}
+.bottom-container {}
 
 .cloud1 {
     position: relative;
@@ -37,13 +35,11 @@ h3 {
 }
 
 .hello {
-    position: relative
+    position: relative;
     top: 50px;
 }
 
-.middle-container {
-
-}
+.middle-container {}
 
 .mountain {
     position: relative;
