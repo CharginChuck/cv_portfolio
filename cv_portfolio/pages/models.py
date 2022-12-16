@@ -7,10 +7,13 @@ class Skill(models.Model):
 
     def __str__(self):
         return self.title
-        
+
 class Subskill(models.Model):
     title = models.CharField(max_length=40)
     skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
 
 class Contact(models.Model):
     fname = models.CharField(max_length=50)
