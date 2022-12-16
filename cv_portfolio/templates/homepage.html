@@ -1,6 +1,6 @@
 {% load static %}
 
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,9 +31,14 @@
     <h2>My Skills.</h2>
     <div class="skill-row">
       <img class="python-logo" src="{% static 'images/python.jpg' %}" alt="python">
-          <h3 class="python-text">Python</h3>
+      <!-- Pull Python skill title from database -->
+          <h3 class="python-text">{% for item in python_skill %}
+            {{ item.title }} 
+          {% endfor %}</h3>
 
-          <p class="python-text">I've been building and learning in Python every day for the past several months.</p>
+          <p class="python-text">{% for item in python_skill %}
+            {{ item.description }} 
+          {% endfor %}</p>
 
 <!-- Listing python skills from database -->
             <p><strong>|
@@ -46,19 +51,71 @@
     </div>
     <div class="skill-row">
       <img class="webdev-logo" src="{% static 'images/webdev.png' %}" alt="webdev-img">
-      <h3>Web Development</h3>
-      <p class="skills-description">I've been picking up web development to add some front-end tools to my skillset, including HTML, CSS,
-          JavaScript, and ReactJS.</p>
+<!-- Pull Webdev skill title from database -->
+      <h3>{% for item in webdev_skill %}
+        {{ item.title }} 
+      {% endfor %}</h3>
+<!-- pull webdev skill description from database -->
+      <p class="skills-description">{% for item in webdev_skill %}
+        {{ item.description }} 
+      {% endfor %}</p>
+<!-- Listing web dev skills from database -->
+          <p><strong>|
+            {% for item in webdev_subskills %}
+              {{ item.title }} <strong>|</strong>
+            {% endfor %}
+          </strong>
+          </p>
+
+
+
+<!-- Pull sql skill title from database -->
+      <h3>{% for item in sql_skill %}
+        {{ item.title }} 
+      {% endfor %}</h3>
+<!-- pull sql skill description from database -->
+      <p class="skills-description">{% for item in sql_skill %}
+        {{ item.description }} 
+      {% endfor %}</p>
+<!-- Listing sql skills from database -->
+          <p><strong>|
+            {% for item in sql_subskills %}
+              {{ item.title }} <strong>|</strong>
+            {% endfor %}
+          </strong>
+          </p>
+
+
+<!-- Pull devops skill title from database -->
+      <h3>{% for item in devops_skill %}
+        {{ item.title }} 
+      {% endfor %}</h3>
+<!-- pull devops skill description from database -->
+      <p class="skills-description">{% for item in devops_skill %}
+        {{ item.description }} 
+      {% endfor %}</p>
+<!-- Listing devops skills from database -->
+          <p><strong>|
+            {% for item in devops_subskills %}
+              {{ item.title }} <strong>|</strong>
+            {% endfor %}
+          </strong>
+          </p>
+
+
+
+        
     </div>
   </div>
   <hr>
+</div>
   <div class="contact-me">
     <h2>Get In Touch</h2>
     <h3>If you're looking for a developer.</h3>
     <p>Looking for a developer?  Let's chat!</p>
     <a class="btn" href="mailto:codeman1926@email.com">CONTACT ME</a>
   </div>
-</div>
+
 
 <div class="bottom-container">
   <a class="footer-link" href="https://www.linkedin.com/in/cody-smith-25014914a/">LinkedIn</a>
@@ -69,4 +126,4 @@
     </div>
 
 </body>
-</html>>
+</html>

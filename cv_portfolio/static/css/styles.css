@@ -39,7 +39,9 @@ h3 {
     top: 50px;
 }
 
-.middle-container {}
+.middle-container {
+    background-color: #C0DEFF;    
+}
 
 .mountain {
     position: relative;
@@ -65,7 +67,7 @@ h3 {
 }
 
 .top-container {
-    background-color: #C6EBC5;
+    background-color: #ADA2FF;
     position: relative;
     font-size: 1.2rem;
 }
