@@ -32,7 +32,17 @@
     <div class="skill-row">
       <img class="python-logo" src="{% static 'images/python.jpg' %}" alt="python">
           <h3 class="python-text">Python</h3>
+
           <p class="python-text">I've been building and learning in Python every day for the past several months.</p>
+
+<!-- Listing python skills from database -->
+            <p><strong>|
+              {% for item in python_subskills %}
+                {{ item.title }} <strong>|</strong>
+              {% endfor %}
+            </strong>
+            </p>
+        
     </div>
     <div class="skill-row">
       <img class="webdev-logo" src="{% static 'images/webdev.png' %}" alt="webdev-img">

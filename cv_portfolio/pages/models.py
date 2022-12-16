@@ -13,7 +13,7 @@ class Subskill(models.Model):
     skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.title
+        return self.title + ' - ' + self.skill.title
 
 class Contact(models.Model):
     fname = models.CharField(max_length=50)
@@ -24,3 +24,4 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.fname + ' ' + self.lname
+
